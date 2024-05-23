@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body{
+ margin: 0;
+ font-family: arial, sans-serif;
+}
+header,nav,main,footer{
+    padding: 20px;
+    background-color: rgb(19, 22, 21);
+    color: white;
+}
+header{
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    margin: 20px;
+}
+.grid-item{
+    background-color: rgb(171, 193, 130);
+}
+.inline-block{
+    background-color: rgb(172, 202, 155);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+    <button onclick="toggleMenu()">Toggle Menu</button>
+    <div class="container">
+        <aside id="sidebar">
+            <h2>Menu Lateral</h2>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul> </aside>
+            <main>
+                <h2>Conteudo Principal</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, eos sunt expedita ipsum, ex perferendis accusamus praesentium illum, autem voluptatum qui. Mollitia, quae? Ab doloremque non soluta blanditiis atque quia.</p>
+            <div class="grid-item">Item de Grade 1</div>
+            <div class="grid-item">Item de Gade 2</div>
+            <div class="grid-item">Item de Grade 3</div>
+            <div class="inline-block">Inline Block 1</div>
+            <div class="inline-block">Inline Block 2</div>
+            <div class="inline-block">Inline Block 3</div>  </main> 
+    </div>
+    <footer>
+        <p>@2024 Meu site. Todos os direitos reservados</p>
+    </footer>
+    <script>
+        function toggleMenu(){
+            var sidebar= document.getElementById('sidebar');
+            sidebar.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
